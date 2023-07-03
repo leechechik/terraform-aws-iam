@@ -338,3 +338,9 @@ variable "node_termination_handler_sqs_queue_arns" {
   type        = list(string)
   default     = ["*"]
 }
+
+variable "audiences" {
+  description = "List of audiences"
+  type        = list(string)
+  default     = ["sts.amazonaws.com"]
+}
